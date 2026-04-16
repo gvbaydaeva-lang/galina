@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
-    "build:pages": "vite build --mode github-pages",
+    "build:pages": "vite build --mode github-pages --outDir docs",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist docs",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
