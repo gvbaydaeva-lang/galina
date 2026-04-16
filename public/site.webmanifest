@@ -1,0 +1,10 @@
+{
+  "name": "Галина Санджиева — Эксперт по новостройкам",
+  "short_name": "Галина Санджиева",
+  "description": "Подбор новостроек, ипотека и сопровождение сделки.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0C0C",
+  "theme_color": "#0C0C0C",
+  "lang": "ru"
+}

@@ -1,4 +1,4 @@
-import { useIsMobile } from './hooks/useIsMobile';
+import { useIsMobile } from './useIsMobile';
 import DesktopApp from './DesktopApp';
 import MobileApp from './MobileApp';
 

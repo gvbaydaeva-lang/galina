@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Сайт Галины Санджиевой
 
-# Run and deploy your AI Studio app
+Лендинг эксперта по новостройкам на `Vite + React`.
 
-This contains everything you need to run your app locally.
+## Локальный запуск
 
-View your app in AI Studio: https://ai.studio/apps/7270a47f-c9c5-430b-bac3-df034ae3daea
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
+1. Установите зависимости:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. При необходимости создайте `.env.local` на основе `.env.example`
+3. Запустите проект:
    `npm run dev`
+
+## Production-сборка
+
+1. Соберите проект:
+   `npm run build`
+2. Готовые файлы будут в папке `dist`
+
+## Переменные окружения
+
+- `VITE_BASE_PATH` - базовый путь для сайта, например `/` или `/landing/`
+- `VITE_SITE_URL` - основной URL сайта для `robots.txt` и будущих SEO-настроек
+
+## Публикация на сервер
+
+- Для обычного размещения в корне домена используйте `VITE_BASE_PATH=/`
+- Для размещения в подпапке укажите нужный базовый путь до сборки
+- Если сервер Apache, в сборку попадет файл `public/.htaccess` для корректной отдачи SPA
+- На сервер нужно загружать содержимое папки `dist`
